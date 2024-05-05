@@ -1,1 +1,169 @@
 
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Style+Script&display=swap');
+
+/* Estilizando somente o nome da academia com outra fonte */
+@font-face {
+    font-family: 'Wellness';
+    src: url(../fontes/All\ Star\ Resort.ttf) format('opentype');
+}
+
+:root {
+    --cor0: #F2A516;
+    --cor1: #D9D9D9;
+    --cor2: #F27D16;
+    --cor3: #F23005;
+    --cor4: #0C0D0A;
+    --fonte-padrão: roboto, verdana, sans-sarif;
+    --fonte-wellness: 'Wellness';
+
+}
+
+/* Estilização itens Page Index */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html, body {
+    background-color: var(--cor1);
+    height: 100vh;
+    width: 100vw;
+}
+header {
+    padding-top: 0px;
+    min-height: 150px;
+}
+div.video-home {
+    min-height: 150px;
+    text-align: center;
+    padding: 20px;
+    margin: 0px -20px 30px -20px;
+}
+
+div.video-home > iframe {
+    position: absolute;
+    top:5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+nav#caixa-preta {
+    margin: 0px -100px 0px -20px;
+}
+nav {
+    background-color: black;
+    font-family: roboto, sans-serif;
+    color: var(--cor1);
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin: 0px -20px 0px -20px;
+}
+nav > a:hover {
+    background-color: var(--cor2);
+}
+section#logo-e-nome {
+    background-color: var(--cor4);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.308);
+    text-align: center;
+    margin-top: 0px;
+}
+section#logo-e-nome > h1 {
+    text-align: center;
+    margin: 0px -20px 30px -20px;
+    color: var(--cor0);
+
+}
+
+/* Estilo Sessão Landing Page  - Desafie-se! */
+section #landing-page {
+    background-color: var(--cor4);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.308);
+   
+}
+section #landing-page > h1{
+    font-family: roboto, sans-serif;
+    color: var(--cor0);
+    font-size: 30px;
+    
+}
+section #landing-page > p {
+    font-family: roboto, sans-serif;
+    color: var(--cor1);
+    font-size: 16px;
+}
+
+div.laranja-preto{
+    background-color: var(--cor0);
+}
+/* Estilização do Corpo do site 
+Classe se acessa com .primeiro p {} e Id se acessa com #primeiro p
+*/
+p {
+    text-align: justify;
+    font-family: "Roboto","Condensed", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: black;
+    font-style: normal;
+}
+h1 {
+    text-align: justify;
+    font-family: "Roboto","Condensed", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: black;
+    font-style: normal;
+}
+h2 {
+    text-align: justify;
+    font-family: "Roboto","Condensed", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: black;
+    font-style: normal;
+}
+h3 {
+    text-align: justify;
+    font-family: "Roboto","Condensed", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: black;
+    font-style: normal;
+}
+
+div#redes-sociais {
+    text-align: right;
+}
+div#redes-sociais > a > img {
+width: 50px;
+margin: 10px;
+border-radius: 50%;
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+box-sizing: border-box;
+}
+div#redes-sociais img:hover {
+    border: 2px solid rgba(255,255,255,0.637);
+    transform: translate(-3px,-3px);
+    box-shadow:  5px 5px 10px rgba(0,0,0,0.623);
+    transition: transform 0.3s border 0.3s;
+}
+div.fundo-preto-letra-amarela {
+    background-color: var(--cor4);
+    font-family: "Roboto","Condensed", sans-serif;
+    color: yellow;
+}
+footer{
+    background-color: var(--cor4);
+}
+footer > p{
+    font-family: "Roboto","Condensed", sans-serif;
+    color: yellow;
+    font-size: small;
+    text-align: center;
+}
